@@ -19,6 +19,8 @@ function adicionarAmigo() {
 
     }
 
+}
+
 function atualizarListaAmigos() {
 
     listaAmigos.innerHTML = "";
@@ -29,7 +31,5 @@ function atualizarListaAmigos() {
         li.innerHTML = element;
         listaAmigos.appendChild(li);
     })
-
-}
 
 }
