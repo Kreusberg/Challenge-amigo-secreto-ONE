@@ -11,7 +11,7 @@ function adicionarAmigo() {
 
     // Valida se a resposta é ou não válida
     if (resposta.value == "" || resposta.value.length == 0) {
-        alert("Por favor. Digite um valor válido");
+        alert("Por favorr, digite um nome válido");
     } else {
         // Adiciona o amigo na lista "amigos"
         amigos.push(resposta.value);
