@@ -1,14 +1,19 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 
+// Array para armazenar os nomes dos amigos a serem sorteados
 let amigos = [];
+
+// Array para armazenar os nomes dos amigos na lista (ul) "listaAmigos"
 let listaAmigos = document.querySelector("ul");
 
 function adicionarAmigo() {
     let resposta = document.querySelector("input");
 
+    // Valida se a resposta é ou não válida
     if (resposta.value == "" || resposta.value.length == 0) {
         alert("Por favor. Digite um valor válido");
     } else {
+        // Adiciona o amigo na lista "amigos"
         amigos.push(resposta.value);
         resposta.value = "";
 
