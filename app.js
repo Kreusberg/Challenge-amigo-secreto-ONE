@@ -12,7 +12,7 @@ function adicionarAmigo() {
         alert("Por favor. Digite um valor válido");
     } else {
         amigos.push(resposta.value);
-        console.log(amigos);
+        resposta.value = "";
 
         // chama a função responsável por adicionar o nome do amigo na lista "listaAmigos"
         atualizarListaAmigos();
@@ -31,5 +31,20 @@ function atualizarListaAmigos() {
         li.innerHTML = element;
         listaAmigos.appendChild(li);
     })
+
+}
+
+function sortearAmigo() {
+
+    let resultado = document.getElementById("resultado");
+
+    // Como na função adicionarAmigo() já é feito uma validação impedindo que um valor nulo seja adicionado, 
+    // não há necessidade de adicionar esta validação aqui, pois caso o código chegue até este ponto, já é intrínseco o fato de que a lista "amigos" não está vazia
+    let indiceAleatorio = parseInt(Math.random() * amigos.length);
+    let amigoSorteado = amigos[indiceAleatorio];
+    console.log("indiceAleatorio = " + indiceAleatorio + " | amigos[indiceAleatorio] = " + amigoSorteado);
+    resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`;
+    
+    listaAmigos.innerHTML = "";
 
 }
