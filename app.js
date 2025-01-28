@@ -6,8 +6,6 @@ let listaAmigos = document.querySelector("ul");
 function adicionarAmigo() {
     let resposta = document.querySelector("input");
 
-    console.log(resposta.value);
-
     if (resposta.value == "" || resposta.value.length == 0) {
         alert("Por favor. Digite um valor válido");
     } else {
@@ -42,7 +40,6 @@ function sortearAmigo() {
     // não há necessidade de adicionar esta validação aqui, pois caso o código chegue até este ponto, já é intrínseco o fato de que a lista "amigos" não está vazia
     let indiceAleatorio = parseInt(Math.random() * amigos.length);
     let amigoSorteado = amigos[indiceAleatorio];
-    console.log("indiceAleatorio = " + indiceAleatorio + " | amigos[indiceAleatorio] = " + amigoSorteado);
     resultado.innerHTML = `O amigo secreto sorteado é: ${amigoSorteado}`;
     
     listaAmigos.innerHTML = "";
