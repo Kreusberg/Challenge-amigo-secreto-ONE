@@ -1,20 +1,30 @@
-## README - Lista de Nomes
+**##** **README - Lista de Nomes**
 
 Este projeto consiste em uma página web simples que permite adicionar nomes a uma lista e exibi-la atualizada na tela. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript.
 
-### Funcionalidades
+![Print inicial do projeto](img/1_printscreen.png)
 
-*   **adicionarAmigo():** O usuário pode digitar um nome no campo de texto e clicar no botão "Adicionar" para adicionar o nome à lista. Se o campo de texto estiver vazio ao clicar em "Adicionar", um alerta será exibido informando que o nome não pode ser vazio.
-*   **atualizarListaAmigos():** Após adicionar um nome válido, a lista de nomes é atualizada, acrescentando no <strong>li<strong> o elemento.
-*   **sortearAmigo():** Esta função sorteia um número aleatório, e então retorna o nome que contenha este index.
+**###** **Funcionalidades**
 
-### Tecnologias Utilizadas
+*   ****adicionarAmigo():**** O usuário pode digitar um nome no campo de texto e clicar no botão "Adicionar" para adicionar o nome à lista. Se o campo de texto estiver vazio ao clicar em "Adicionar", um alerta será exibido informando que o nome não pode ser vazio.
 
-*   **HTML:** Estrutura a página web, incluindo o formulário para adicionar nomes e a área para exibir a lista.
-*   **CSS:** Estiliza a página web, definindo a aparência dos elementos, como cores, fontes e布局。
-*   **JavaScript:** Adiciona interatividade à página, permitindo adicionar nomes à lista, validar o campo de texto e atualizar a exibição da lista dinamicamente.
+![Nome de um amigo para adicionar](img/02_friend_name.png)
 
-### Como Usar
+*   ****atualizarListaAmigos():**** Após adicionar um nome válido, a lista de nomes é atualizada, acrescentando no <strong>li<strong> o elemento.
+
+![Lista de amigos](img/03_friend_list.png)
+
+*   ****sortearAmigo():**** Esta função sorteia um número aleatório, e então retorna o nome que contenha este index.
+
+![Amigo sorteado](img/04_secret_friend.png)
+
+**###** **Tecnologias Utilizadas**
+
+*   ****HTML:**** Estrutura a página web, incluindo o formulário para adicionar nomes e a área para exibir a lista.
+*   ****CSS:**** Estiliza a página web, definindo a aparência dos elementos, como cores, fontes e布局。
+*   ****JavaScript:**** Adiciona interatividade à página, permitindo adicionar nomes à lista, validar o campo de texto e atualizar a exibição da lista dinamicamente.
+
+**###** **Como Usar**
 
 1.  Digite um nome no campo de texto.
 2.  Clique no botão "Adicionar".
